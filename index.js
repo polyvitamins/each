@@ -3,7 +3,7 @@
 		ctx = ctx || this;
 		for (var prop in obj) {
 			if (obj.hasOwnProperty(prop)) {
-				fn.call(ctx, prop, obj[prop]);
+				fn.call(ctx, obj[prop], prop);
 			}
 		}
 		return obj;
